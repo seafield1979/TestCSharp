@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TestCSharp</RootNamespace>
     <AssemblyName>TestCSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,7 +46,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestArray.cs" />
+    <Compile Include="TestClass.cs" />
+    <Compile Include="TestException.cs" />
+    <Compile Include="TestFunction.cs" />
+    <Compile Include="TestIf.cs" />
+    <Compile Include="TestLoop.cs" />
     <Compile Include="TestString.cs" />
+    <Compile Include="TestVar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -34,12 +34,30 @@ namespace TestCSharp
                 // コマンドによる分岐
                 switch (cmds[0])
                 {
+                    case "array":
+                    case "ary":
+                        break;
+                    case "class":
+                        break;
+                    case "func":
+                        testFunc(testId);
+                        break;
+                    case "if":
+                        break;
+                    case "loop":
+                        testLoop(testId);
+                        break;
                     case "str":
                         testStr(testId);
+                        break;
+                    case "exception":
                         break;
                     case "e":
                     case "exit":
                         exitFlag = true;
+                        break;
+
+                    case "var":
                         break;
                     default:
                         exitFlag = true;
@@ -57,6 +75,60 @@ namespace TestCSharp
 
         }
 
+        /**
+         * 関数のテスト
+         */
+        static void testFunc(int testNo)
+        {
+            switch (testNo)
+            {
+                case 1:
+                    TestFunction.test1();
+                    break;
+                case 2:
+                    TestFunction.test2();
+                    break;
+                case 3:
+                    TestFunction.test3();
+                    break;
+                case 4:
+                    TestFunction.test4();
+                    break;
+                case 5:
+                    TestFunction.test5();
+                    break;
+                case 6:
+                    TestFunction.test6();
+                    break;
+                case 7:
+                    TestFunction.test7();
+                    break;
+            }
+        }
+
+        /**
+         * ループのテスト
+         */
+        static void testLoop(int testNo)
+        {
+            switch (testNo)
+            {
+                case 1:
+                    TestLoop.test1();
+                    break;
+                case 2:
+                    TestLoop.test2();
+                    break;
+                case 3:
+                    TestLoop.test3();
+                    break;
+
+            }
+        }
+
+        /**
+         * 文字列(string)
+         */
         static void testStr(int testNo)
         {
             switch(testNo)
