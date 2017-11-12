@@ -48,11 +48,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestArray.cs" />
     <Compile Include="TestClass.cs" />
+    <Compile Include="TestClassHiding.cs" />
+    <Compile Include="TestClassInherit.cs" />
+    <Compile Include="TestCollection.cs" />
+    <Compile Include="TestDelegate.cs" />
+    <Compile Include="TestEnum.cs" />
     <Compile Include="TestException.cs" />
+    <Compile Include="TestFile.cs" />
     <Compile Include="TestFunction.cs" />
+    <Compile Include="TestGUI.cs" />
     <Compile Include="TestIf.cs" />
+    <Compile Include="TestInterface.cs" />
+    <Compile Include="TestIterator.cs" />
     <Compile Include="TestLoop.cs" />
+    <Compile Include="TestMacro.cs" />
+    <Compile Include="TestNamespace.cs" />
+    <Compile Include="TestOverload.cs" />
+    <Compile Include="TestPolymorphism.cs" />
+    <Compile Include="TestProperty.cs" />
+    <Compile Include="TestRambda.cs" />
+    <Compile Include="TestStatic.cs" />
     <Compile Include="TestString.cs" />
+    <Compile Include="TestStruct.cs" />
+    <Compile Include="TestTask.cs" />
+    <Compile Include="TestThread.cs" />
+    <Compile Include="TestTuple.cs" />
     <Compile Include="TestVar.cs" />
   </ItemGroup>
   <ItemGroup>

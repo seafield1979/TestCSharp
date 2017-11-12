@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 /**
- * 条件分岐
+ * ラムダ式
+ * 無名関数をシンプルに記述するための式
+ * １行に関数の引数、処理、戻り値を返す処理を書くことができる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestRambda
     {
         public static void test1()
         {
@@ -24,6 +27,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

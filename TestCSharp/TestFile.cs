@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 /**
- * 条件分岐
+ * ファイルの入出力
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestFile
     {
         public static void test1()
         {
@@ -24,6 +25,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

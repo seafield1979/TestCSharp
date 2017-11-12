@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * タスク
+ * 簡単に並列処理をできる方法
+ * .Net Framework 4以降で使用できる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestTask
     {
         public static void test1()
         {

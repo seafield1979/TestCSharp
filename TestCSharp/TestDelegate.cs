@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * デリゲート
+ * 外部のオブジェクトに処理を投げるときに、処理終了時に実行したい関数（コールバック関数）を設定できる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestDelegate
     {
         public static void test1()
         {

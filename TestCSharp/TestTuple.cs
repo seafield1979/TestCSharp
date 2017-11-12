@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * タプル
+ * 複数の変数をまとめたもの
+ * 関数の戻り値として使用することで、複数の戻り値を一度に返すことができる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestTuple
     {
         public static void test1()
         {
@@ -24,6 +26,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

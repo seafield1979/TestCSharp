@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/**
- * 条件分岐
+/*
+ * GUI(グラフィカルユーザーインターフェース)
+ * Windowsの表示とボタンやテキスト等のパーツを配置できる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestGUI
     {
         public static void test1()
         {
-
         }
 
         public static void test2()
@@ -24,6 +24,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

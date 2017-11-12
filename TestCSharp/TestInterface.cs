@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * インターフェース
+ * クラスに特定の機能のセットを実装させることができる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestInterface
     {
         public static void test1()
         {

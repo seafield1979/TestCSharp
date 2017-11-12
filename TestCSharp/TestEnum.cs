@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * 列挙型
+ * 整数や文字列の値にまとめて名前を付けることができる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestEnum
     {
         public static void test1()
         {
@@ -24,6 +25,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * スレッド
+ * 並列処理を実行することができる
+ * ※.Net Framework 4以降はTaskがあるので使用することはなくなった
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestThread
     {
         public static void test1()
         {
@@ -24,6 +26,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

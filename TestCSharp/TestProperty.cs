@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * プロパティ
+ * メンバーのゲッターセッターを自動で生成してくれる機能
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestProperty
     {
         public static void test1()
         {

@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * プリプロセッサ
+ * #if や #define でコンパイル前にソースを処理することができる
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestMacro
     {
         public static void test1()
         {
@@ -24,6 +25,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * オブジェクト指向のポリモフィズム
+ * 親クラスの変数に代入された子クラスオブジェクトのメソッドを呼び出すと、
+ * 子クラスのメソッドが呼ばれる。
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestPolymorphism
     {
         public static void test1()
         {

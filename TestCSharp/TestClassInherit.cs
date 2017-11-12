@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * クラスの継承
+ * ある親クラスの属性を引きつぐ子クラスを作成する
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestClassInherit
     {
         public static void test1()
         {
@@ -24,6 +25,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

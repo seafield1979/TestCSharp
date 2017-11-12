@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * 複数のオブジェクトをまとめて扱うことができるコレクションクラス
+ * リスト、マップ、セット等がある
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestCollection
     {
         public static void test1()
         {
@@ -24,6 +25,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }

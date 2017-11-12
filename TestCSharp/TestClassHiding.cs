@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
- * 条件分岐
+ * クラスのメンバの隠蔽
+ * メンバやメソッドに隠蔽の修飾子を付けて、外部からの参照を制限sル
  */
 namespace TestCSharp
 {
-    class TestIf
+    class TestClassHiding
     {
         public static void test1()
         {
@@ -24,6 +25,5 @@ namespace TestCSharp
         {
 
         }
-
     }
 }
