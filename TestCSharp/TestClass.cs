@@ -15,6 +15,8 @@ using System.Threading.Tasks;
  */
 namespace TestCSharp
 {
+    using NSTestClass;
+
     class TestClass
     {
         // オブジェクトの生成
@@ -42,37 +44,40 @@ namespace TestCSharp
 
     }
 
-    class CTest1
+    namespace NSTestClass
     {
-        public int a;
-        private int b;
-        private string str;
-
-        // コンストラクタ
-        public CTest1()
+        class CTest1
         {
-            a = 0;
-            b = 0;
-            str = null;
-        }
+            public int a;
+            private int b;
+            private string str;
 
-        // 引数を渡すコンストラクタ
-        public CTest1(int a, int b, string str)
-        {
-            this.a = a;
-            this.b = b;
-            this.str = str;
-        }
+            // コンストラクタ
+            public CTest1()
+            {
+                a = 0;
+                b = 0;
+                str = null;
+            }
 
-        // デストラクタ（実態はjavaのファイナライザ）
-        ~CTest1()
-        {
-            Console.WriteLine("~CTest1()");
-        }
+            // 引数を渡すコンストラクタ
+            public CTest1(int a, int b, string str)
+            {
+                this.a = a;
+                this.b = b;
+                this.str = str;
+            }
 
-        public void disp()
-        {
-            Console.WriteLine("a = {0}, b = {1} str={2}", a, b, str);
+            // デストラクタ（実態はjavaのファイナライザ）
+            ~CTest1()
+            {
+                Console.WriteLine("~CTest1()");
+            }
+
+            public void disp()
+            {
+                Console.WriteLine("a = {0}, b = {1} str={2}", a, b, str);
+            }
         }
     }
 }
