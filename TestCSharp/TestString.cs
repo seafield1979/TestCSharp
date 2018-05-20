@@ -28,7 +28,13 @@ namespace TestCSharp
         }
         public static void test2()
         {
+            // 挿入
+            string s1 = "0123456789";
 
+            string s2 = s1.Insert(3, "A");
+            Console.WriteLine(s2);
+
+            // 
         }
 
         public static void test3()

@@ -34,6 +34,10 @@ namespace TestCSharp
                 // コマンドによる分岐
                 switch (cmds[0])
                 {
+                    case "accessor":
+                    case "acc":
+                        testAccessor(testId);
+                        break;
                     case "array":
                     case "ary":
                         testArray(testId);
@@ -135,6 +139,24 @@ namespace TestCSharp
 
         }
 
+        /**
+         * アクセサ(プロパティ)のテスト
+         */
+        static void testAccessor(int testNo)
+        {
+            switch (testNo)
+            {
+                case 1:
+                    TestAccessor.test1();
+                    break;
+                case 2:
+                    TestAccessor.test2();
+                    break;
+                case 3:
+                    TestAccessor.test3();
+                    break;
+            }
+        }
 
         /**
          * ループのテスト

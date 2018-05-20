@@ -35,6 +35,8 @@ namespace TestCSharp
 
         public static void test2()
         {
+            CTest1Child c1 = new CTest1Child(1,2,3, "hoge");
+            c1.disp();
 
         }
         public static void test3()
@@ -49,8 +51,8 @@ namespace TestCSharp
         class CTest1
         {
             public int a;
-            private int b;
-            private string str;
+            protected int b;
+            protected string str;
 
             // コンストラクタ
             public CTest1()
@@ -58,6 +60,7 @@ namespace TestCSharp
                 a = 0;
                 b = 0;
                 str = null;
+                Console.WriteLine("CTest1:Constructor");
             }
 
             // 引数を渡すコンストラクタ
@@ -66,6 +69,7 @@ namespace TestCSharp
                 this.a = a;
                 this.b = b;
                 this.str = str;
+                Console.WriteLine("CTest1:Constructor2");
             }
 
             // デストラクタ（実態はjavaのファイナライザ）
@@ -77,6 +81,29 @@ namespace TestCSharp
             public void disp()
             {
                 Console.WriteLine("a = {0}, b = {1} str={2}", a, b, str);
+            }
+        }
+
+        // 子クラス
+        class CTest1Child : CTest1
+        {
+            int c;
+
+            public CTest1Child()
+            {
+                Console.WriteLine("CTest1Child:Constructor");
+            }
+
+            // 親クラスのコンストラクタを明示的に呼び出す
+            public CTest1Child(int a, int b, int c, string str) : base(a, b, str)
+            {
+                Console.WriteLine("CTest1Child:Constructor2");
+                this.c = c;
+            }
+
+            public new void disp()
+            {
+                Console.WriteLine("a = {0}, b = {1} c = {2} str={3}", a, b, c, str);
             }
         }
     }

@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestAccessor.cs" />
     <Compile Include="TestArray.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="TestClassHiding.cs" />
