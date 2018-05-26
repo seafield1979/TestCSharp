@@ -94,6 +94,10 @@ namespace TestCSharp
                     case "property":
                         testProperty(testId);
                         break;
+                    case "pp":
+                    case "preprocess":
+                        testPreprocessor(testId);
+                        break;
                     case "rambda":
                         testRambda(testId);
                         break;
@@ -528,6 +532,26 @@ namespace TestCSharp
                     break;
                 case 3:
                     TestProperty.test3();
+                    break;
+
+            }
+        }
+
+        /*
+         * プリプロセッサ
+         */
+        static void testPreprocessor(int testNo)
+        {
+            switch (testNo)
+            {
+                case 1:
+                    TestPreprocessor.test1();
+                    break;
+                case 2:
+                    TestPreprocessor.test2();
+                    break;
+                case 3:
+                    TestPreprocessor.test3();
                     break;
 
             }
