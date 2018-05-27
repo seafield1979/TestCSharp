@@ -55,6 +55,7 @@
     <Compile Include="TestEnum.cs" />
     <Compile Include="TestException.cs" />
     <Compile Include="TestFile.cs" />
+    <Compile Include="TestFile2.cs" />
     <Compile Include="TestFunction.cs" />
     <Compile Include="TestGUI.cs" />
     <Compile Include="TestIf.cs" />

@@ -66,6 +66,9 @@ namespace TestCSharp
                     case "file":
                         testFile(testId);
                         break;
+                    case "file2":
+                        testFile2(testId);
+                        break;
                     case "func":
                         testFunc(testId);
                         break;
@@ -259,7 +262,9 @@ namespace TestCSharp
                 case 3:
                     TestCollection.test3();
                     break;
-
+                case 4:
+                    TestCollection.test4();
+                    break;
             }
         }
 
@@ -339,10 +344,56 @@ namespace TestCSharp
                 case 3:
                     TestFile.test3();
                     break;
-
             }
         }
 
+        /**
+         * ファイル＆フォルダ情報取得、ファイル操作
+         */
+        static void testFile2(int testNo)
+        {
+            switch (testNo)
+            {
+                case 1:
+                    TestFile2.test1();
+                    break;
+                case 2:
+                    TestFile2.test2();
+                    break;
+                case 3:
+                    TestFile2.test3();
+                    break;
+                case 4:
+                    TestFile2.test4();
+                    break;
+                case 5:
+                    TestFile2.test5();
+                    break;
+                case 6:
+                    TestFile2.test6();
+                    break;
+                case 7:
+                    TestFile2.test7();
+                    break;
+                case 8:
+                    TestFile2.test8();
+                    break;
+                case 9:
+                    TestFile2.test9();
+                    break;
+                case 10:
+                    TestFile2.test10();
+                    break;
+                case 11:
+                    TestFile2.test11();
+                    break;
+                case 12:
+                    TestFile2.test12();
+                    break;
+
+
+            }
+        }
 
 
         /**
