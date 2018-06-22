@@ -35,9 +35,23 @@ namespace TestCSharp
             CChild2 c2 = new CChild2(10, 20, 30);
             c2.disp();    
         }
+
+        // アップキャストとポリモフィズム
+        // 親クラスの変数に子クラスのオブジェクトを代入し、親クラスの変数を通して子クラスのメソッドを呼び出す
         public static void test3()
         {
+            CChild31 c1 = new CChild31();
+            CChild32 c2 = new CChild32();
 
+            List<CParent3> list = new List<CParent3>();
+
+            list.Add(c1);
+            list.Add(c2);
+
+            foreach (CParent3 p1 in list)
+            {
+                p1.disp();
+            }
         }
     }
 
@@ -109,4 +123,45 @@ namespace TestCSharp
             Console.WriteLine("a={0} b={1} c={2}", a, b, c);
         }
     }
+
+    // アップキャスト:　親クラスの変数に子クラスの変数を渡すことをアップキャストという
+    // アップキャストを用いてポリモフィズムを実現する
+    abstract class CParent3
+    {
+        string name;
+
+        public CParent3()
+        {
+
+        }
+
+        public abstract void disp();
+    }
+
+    class CChild31 : CParent3
+    {
+        public CChild31()
+        {
+
+        }
+
+        override public void disp()
+        {
+            Console.WriteLine("disp child1");
+        }
+    }
+
+    class CChild32 : CParent3
+    {
+        public CChild32()
+        {
+
+        }
+
+        override public void disp()
+        {
+            Console.WriteLine("disp child2");
+        }
+    }
+
 }

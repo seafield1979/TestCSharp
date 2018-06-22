@@ -60,10 +60,8 @@ namespace TestCSharp
 
                 // バイナリファイルに書き込み
                 byte[] bin3 = new byte[16] { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
-                bf1.Write(@"data2.bin", bin3, 0, 16, FileMode.Create);
-
+                bf1.Write(@"data2.bin", bin3, 0, bin3.Length, FileMode.Create);
                 bf1.Write(@"data2.bin", bin3, 0, 8, FileMode.Append);
-
             }
             catch(Exception e)
             {
