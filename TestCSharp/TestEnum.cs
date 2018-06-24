@@ -10,13 +10,22 @@ using System.Threading.Tasks;
  */
 namespace TestCSharp
 {
+    public enum 年号
+    {
+        明治, 大正, 昭和, 平成
+    }
+
+    // Enumを拡張
+    public static partial class 年号Extensions
+    {
+        public static string AddDot(this 年号 e)
+        {
+            return e.ToString() + ".";
+        }
+    }
+
     class TestEnum
     {
-        public enum 年号
-        {
-            明治, 大正, 昭和, 平成
-        }
-
         public enum Month
         {
             January = 1, February, March, April,
@@ -32,11 +41,19 @@ namespace TestCSharp
             {
                 Console.WriteLine("{0}:{1}", i, (Month)i);
             }
+
+            foreach(int value in Enum.GetValues(typeof(Month)))
+            {
+                Console.WriteLine("value:{0}", value);
+            }
         }
 
         public static void test2()
         {
-
+            foreach (年号 e in Enum.GetValues(typeof(年号)))
+            {
+                Console.WriteLine(e.AddDot());
+            }
         }
         public static void test3()
         {
@@ -44,7 +61,4 @@ namespace TestCSharp
         }
     }
 
-    class Enum1
-    {
-    }
 }
