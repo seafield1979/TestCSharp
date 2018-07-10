@@ -42,6 +42,9 @@ namespace TestCSharp
                     case "ary":
                         testArray(testId);
                         break;
+                    case "async":
+                        testAsync(testId);
+                        break;
                     case "class":
                         testClass(testId);
                         break;
@@ -182,6 +185,26 @@ namespace TestCSharp
                     TestArray.test3();
                     break;
 
+            }
+        }
+
+        /**
+         * Async/Awaitのテスト
+         * 関数単位でマルチスレッド処理を実行できる
+         */
+        static void testAsync(int testNo)
+        {
+            switch(testNo)
+            {
+                case 1:
+                    TestAsync.test1();
+                    break;
+                case 2:
+                    TestAsync.test2();
+                    break;
+                case 3:
+                    TestAsync.test3();
+                    break;
             }
         }
 
